@@ -374,6 +374,12 @@
    `(org-warning ((,class (:foreground ,berrys09 :slant italic))))
    `(org-verbatim ((,class (:inherit default))))
 
+   ;; code blocks
+   `(org-block-begin-line ((,class (:foreground, berrys04, :background ,berrys05))))
+   `(org-block-end-line ((,class (:foreground, berrys04, :background ,berrys05))))
+   ;;`(org-block-begin-line ((,class (:background "#FA5D66"))))
+   ;;`(org-block-end-line ((,class (:background "#66F446"))))
+
    ;; Org Pomodoro
    `(org-pomodoro-mode-line ((,class (:foreground ,berrys05 :weight bold))))
    `(org-pomodoro-mode-line-break ((,class (:foreground ,berrys08 :weight bold))))
@@ -381,6 +387,8 @@
 
    ;; => Which key
    `(which-key-key-face ((,class (:foreground ,berrys05 :weight bold))))))
+
+    
 
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path) load-file-name)
